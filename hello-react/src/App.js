@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+  sayHey() {
+    console.log('hey');
+  }
   render() {
+    let text = 'Dev-Server'
     return (
       <React.Fragment>
-        <div>Hello</div>
-        <div>Bye</div>
+        <h1>Hello React</h1>
+        <h1>welcomto {text}</h1>
+        <button onClick={this.sayHey}>Click Me</button>
       </React.Fragment>
     );
   }
