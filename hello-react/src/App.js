@@ -6,12 +6,14 @@ class App extends Component {
     console.log('hey');
   }
   render() {
-    let text = 'Dev-Server'
     return (
       <React.Fragment>
-        <h1>Hello React</h1>
-        <h1>welcomto {text}</h1>
-        <button onClick={this.sayHey}>Click Me</button>
+        {
+          1 + 1 === 3 ? (<div>맞음</div>) : (<div>틀림</div>)
+        }
+        {
+          1 + 1 === 2 && (<div>맞음</div>) // 이러면 조건식이 true일때만 보여준다.
+        }
       </React.Fragment>
     );
   }
