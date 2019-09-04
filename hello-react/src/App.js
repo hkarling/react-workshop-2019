@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import MyComponent from './components/MyComponent';
 
 class App extends Component {
   sayHey() {
@@ -7,14 +8,7 @@ class App extends Component {
   }
   render() {
     return (
-      <React.Fragment>
-        {
-          1 + 1 === 3 ? (<div>맞음</div>) : (<div>틀림</div>)
-        }
-        {
-          1 + 1 === 2 && (<div>맞음</div>) // 이러면 조건식이 true일때만 보여준다.
-        }
-      </React.Fragment>
+      <MyComponent name="리엑트" />
     );
   }
 }
