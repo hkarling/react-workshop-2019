@@ -8,7 +8,7 @@ class App extends Component {
   }
   render() {
     return (
-      <MyComponent />
+      <MyComponent name={3} /> // 문자열 이외의 값을 보낼때는 {}로 감싼다.
     );
   }
 }

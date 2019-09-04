@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class MyComponent extends Component {
-    // transform-class-properties 문법
-    static defaultProps = {
-        name: '기본'
-    }
     render() {
         return ( // props로 넘어오는 값을 받는다.
             <div>
@@ -17,6 +14,11 @@ class MyComponent extends Component {
 // defaultProps 기본값 설정
 MyComponent.defaultProps = {
     name: '기본이름'
+}
+
+// props의 type을 정할때 사용한다.
+MyComponent.propTypes = {
+    name: PropTypes.string // name props 타입을 문자열로 설정함
 }
 
 export default MyComponent;
