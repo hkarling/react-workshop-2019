@@ -8,7 +8,7 @@ class App extends Component {
   }
   render() {
     return (
-      <MyComponent name="리엑트" />
+      <MyComponent />
     );
   }
 }
